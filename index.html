@@ -2,103 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Ethen Mutiso</title>
+    <title>Home - Ethen Mutiso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
         }
 
-        header {
+        nav {
             background-color: #2c3e50;
-            color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #2c3e50;
-        }
-
-        ul {
-            line-height: 1.8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2c3e50;
+        nav a {
             color: white;
-            margin-top: 20px;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        button {
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero {
             background-color: #3498db;
             color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
+            text-align: center;
+            padding: 80px 20px;
         }
 
-        button:hover {
-            background-color: #2980b9;
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .intro p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Hello, I'm Ethen Mutiso 👋</h1>
-    <p>Aspiring Programmer at IYF</p>
-</header>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        My name is Ethen Mutiso. I am currently learning programming at IYF.
-        I am passionate about technology and building websites and applications.
-    </p>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Ethen Mutiso 🚀</h1>
+        <p>Aspiring Software Developer | IYF Programming Student</p>
+    </section>
 
-<section>
-    <h2>What I'm Learning</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Problem Solving</li>
-    </ul>
-</section>
-
-<section>
-    <h2>My Goal</h2>
-    <p>
-        My goal is to become a professional software developer and create
-        innovative solutions that help people.
-    </p>
-    <button onclick="showMessage()">Click Me</button>
-</section>
-
-<footer>
-    <p>© 2026 Ethen Mutiso | Future Developer 🚀</p>
-</footer>
-
-<script>
-    function showMessage() {
-        alert("Keep going Ethen! You are becoming a great programmer!");
-    }
-</script>
+    <!-- Brief Introduction -->
+    <section class="intro">
+        <h2>Welcome to My Website</h2>
+        <p>
+            Hello! My name is Ethen Mutiso. I am currently learning programming at IYF.
+            I am passionate about technology, coding, and building creative digital solutions.
+            This website showcases my journey, projects, and how you can contact me.
+        </p>
+    </section>
 
 </body>
 </html>
