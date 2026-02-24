@@ -3,30 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact - Ethen Mutiso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Contact Me</h1>
-
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+    <div class="container">
+        <h1>Contact Me 📩</h1>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <!-- Contact Form -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label>Message:</label><br>
-        <textarea name="message"></textarea><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <button type="submit">Send</button>
-    </form>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="info">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+
+        <!-- Location / Timezone -->
+        <div class="info">
+            <h2>Location</h2>
+            <p>Nairobi, Kenya</p>
+            <p>Timezone: East Africa Time (EAT, UTC +3)</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
